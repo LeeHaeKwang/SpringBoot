@@ -22,18 +22,14 @@
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed"
-					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
 				<a class="navbar-brand" href="/index.html">Brand</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse"
-				id="bs-example-navbar-collapse-1">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="list">사용자 목록</a></li>
+				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="/form.html">회원가입</a></li>
 				</ul>
@@ -43,7 +39,7 @@
 		<!-- /.container-fluid -->
 	</nav>
 	<div class="container">
-		<form>
+		<form action="/create" method="post">
 			<div class="form-group">
 				<label for="userName">사용자 이름</label>
 				<input type="text" class="form-control" name="userName" placeholder="이름을 입력하세요">
